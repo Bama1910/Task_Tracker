@@ -3,7 +3,7 @@ import 'package:material_ui/material_ui.dart';
 
 import 'home_page.dart';
 
-// Palet iOS Notes mode gelap. Dipakai temaNotes(), bukan ditulis di widget.
+
 const Color kBHitam = Color(0xFF000000);
 const Color kKartu = Color(0xFF1C1C1E);
 const Color kGaris = Color(0xFF2C2C2E);
@@ -16,7 +16,6 @@ void main() {
   runApp(const MiniTaskApp());
 }
 
-// DIGANTI TOTAL: satu fungsi tema untuk seluruh aplikasi.
 ThemeData themeNotes() {
   final ColorScheme skema = ColorScheme.fromSeed(
     seedColor: kAksen,

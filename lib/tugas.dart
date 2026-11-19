@@ -1,4 +1,4 @@
-// BARU: model sederhana untuk satu catatan.
+//model sederhana untuk satu catatan.
 class Tugas {
   final String judul;
   bool selesai;

@@ -2,7 +2,7 @@ import 'package:material_ui/material_ui.dart';
 
 import 'tugas.dart';
 
-// BARU: halaman detail. Hanya membaca objek, tidak mengubahnya.
+// halaman detail. Hanya membaca objek, tidak mengubahnya.
 class DetailPage extends StatelessWidget {
   final Tugas tugas;
 

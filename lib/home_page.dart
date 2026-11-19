@@ -3,7 +3,7 @@ import 'package:material_ui/material_ui.dart';
 import 'detail_page.dart';
 import 'tugas.dart';
 
-// CUMA DIGESER: dulu bernama TaskHomePage di main.dart, sekarang HomePage.
+//HomePage.
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -42,8 +42,7 @@ class _HomePageState extends State<HomePage> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: const Text('Catatan dihapus.'),
-        // Flutter 3.50: SnackBar dengan aksi default-nya persist = true,
-        // jadi timer tidak pernah menutupnya. Kita paksa auto-dismiss.
+        // SnackBar dengan aksi default-nya persist = true,
         duration: const Duration(seconds: 7),
         persist: false,
         action: SnackBarAction(
@@ -128,7 +127,6 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            // Pengecualian warna manual yang diizinkan (1/2).
                             const Icon(
                               Icons.checklist,
                               size: 64,
